@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jInvertScroll Demo Page</title>
+    <link rel="stylesheet" href="stylesheets/example.css" />
+    <link rel="stylesheet" href="stylesheets/pushy.css" />
+    <link rel="stylesheet" href="stylesheets/frames.css" />
+  
+</head>
+<body>
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left">
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+            </ul>
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+    
+    <div class="container">
+    
+      <!-- Menu Button -->
+      <div class="menu-btn" style="top:0px;">&#9776;</div>
+      
+      <iframe width="1250px" height="800px" src="http://maps.stamen.com/watercolor/embed#13/38.7045/-9.1703"></iframe>
+    
+    </div>
+    <script type="text/javascript" src="javascripts/vendor/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="javascripts/vendor/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript" src="javascripts/vendor/pushy.js"></script>
+    <script type="text/javascript">
+    (function($) {
+      //var canvas = document.getElementById('viewport'),
+      //context = canvas.getContext('2d');
+      
+    
+
+      
+      var $win = $(window),
+        $pencilFrames = $('.frame-list li'),
+        isFirefox = navigator.userAgent.match(/Firefox/) !== null;
+      
+      
+      $win.click(function(){
+        console.log("click");
+        window.location.href = "tower-of-belem.html";
+      });
+        var animationHandler = function() {
+  
+          // quick fix to disable turn animation in Firefox
+          if ( isFirefox == false) {
+              pencilTurnHandler();
+          }
+        };
+
+        //$(document).scroll(animationHandler);
+        //$win.resize(animationHandler);
+        
+      function pencilTurnHandler(percent) {
+        var w = percent * 1000;
+        var startAnimation = 60;
+        
+        if (w > startAnimation) {
+          var scroll = ($win.scrollTop() + $win.width()) - ($('#test').offset().left + $('#test').outerWidth(true) / 2),
+              ratio = scroll / $win.width() * 1.75;
+  
+          var v = w / 14.01;
+          var countOfFrames = 6;
+          var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/countOfFrames)) * countOfFrames;
+          if (choice >= 0 && choice < countOfFrames) {
+              var nextFrame = choice;
+              //var nextFrame = Math.floor(ratio * $pencilFrames.length);
+              $pencilFrames
+                  .removeClass('active')
+                  .eq(nextFrame).addClass('active');
+          }
+          }
+      }
+      
+      function scrollHandler(percentScroll){
+        var w = percentScroll * 1000; // times 1000 so that we can get it to a fine grained scroll, less is choppy
+        var v = w / 14.01;
+        var countOfFrames = 6;
+        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/countOfFrames)) * countOfFrames;
+        console.log(choice);
+        if (choice == 0){
+          make_base();
+        } else {
+        }
+        
+      }
+      $('.menu-btn').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
+    }(jQuery));
+    </script>
+</body>
+</html>
+

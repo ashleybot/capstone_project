@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jInvertScroll Demo Page</title>
+    <link rel="stylesheet" href="stylesheets/example.css" />
+    <link rel="stylesheet" href="stylesheets/pushy.css" />
+    <link rel="stylesheet" href="stylesheets/frames.css" />
+  
+</head>
+<body>
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left">
+          <img src="images/eatntravel.png" alt="eatntravel" width="100" style="width:100px;margin:auto;" >
+          <p>
+            Eat & Travel is a restaurant in your town!
+          </p>
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+    
+    <div class="container">
+    
+      <!-- Menu Button -->
+      <div class="menu-btn" style="top:0px;">&#9776;</div>
+      
+      <div id="intro_title">
+        <h1>Tower of Belem</h1>
+      </div>
+      
+      <div id="movie" class="scroll">
+        <div id="test">
+          <ol class="frame-list">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </div>
+        
+        <div id="intro_text">
+        </div>
+    </div>
+    <div class="horizon scroll">
+        <img src="jInvertScroll/examples/images/horizon.png" alt="" />
+    </div>
+    
+    </div>
+    <script type="text/javascript" src="javascripts/vendor/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="javascripts/vendor/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript" src="javascripts/vendor/pushy.js"></script>
+    <script type="text/javascript">
+    (function($) {
+      //var canvas = document.getElementById('viewport'),
+      //context = canvas.getContext('2d');
+      
+      
+      
+      function make_base()
+      {
+        /*console.log("base");
+        var base_image = new Image();
+        base_image.src = 'images/firework.jpg';
+        base_image.onload = function(){
+          context.drawImage(base_image, 200, 100);
+        }*/
+        
+      }
+      
+      var $win = $(window),
+        $pencilFrames = $('.frame-list li'),
+        isFirefox = navigator.userAgent.match(/Firefox/) !== null;
+      
+        var animationHandler = function() {
+  
+          // quick fix to disable turn animation in Firefox
+          if ( isFirefox == false) {
+              pencilTurnHandler();
+          }
+        };
+
+        $(document).scroll(animationHandler);
+        $win.resize(animationHandler);
+        
+      function pencilTurnHandler(percent) {
+        var w = percent * 1000;
+        var startAnimation = 0;
+        
+        if (w > startAnimation) {
+          var speed = 5.01;
+          var v = w / speed;
+          var countOfFrames = 22;
+          var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/countOfFrames)) * countOfFrames;
+          if (choice >= 0 && choice < countOfFrames) {
+              var nextFrame = choice;
+              $pencilFrames
+                  .removeClass('active')
+                  .eq(nextFrame).addClass('active');
+          }
+          }
+      }
+      
+      function scrollHandler(percentScroll){
+        var w = percentScroll * 1000; // times 1000 so that we can get it to a fine grained scroll, less is choppy
+        var v = w / 14.01;
+        var countOfFrames = 6;
+        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/countOfFrames)) * countOfFrames;
+        console.log(choice);
+        if (choice == 0){
+          make_base();
+        } else {
+        }
+        
+      }
+      $.jInvertScroll(['.scroll','.menu-btn'],        // an array containing the selector(s) for the elements you want to animate
+          {
+          height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+          onScroll: pencilTurnHandler
+          /*onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+              scrollHandler(percent);
+              
+          }*/
+      });
+      $('.menu-btn').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
+    }(jQuery));
+    </script>
+</body>
+</html>
+
