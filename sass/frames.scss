@@ -38,10 +38,11 @@ section {
   z-index: 800;
   width: 6000px;
   top: 0px;
+  height: 768px;
 }
 
 #test{
-  height: 1000px;
+  height: 100%;
   top: -50px;
   width: 1280px;
   background: white;
@@ -54,13 +55,13 @@ section {
   left: 1280px;
   top: 0px;
   width: 500px;
-  height: 1000px;
+  height: 100%;
   display: block;
 }
 
 #viewport{
-  height: 500px;
-  width: 800px;
+  height: 100%;
+  width: 700px;
 }
 
 ol {
@@ -97,64 +98,64 @@ ol {
   background-image: url("../images/marina_stills/left.MOV002.png");
 }
 .frame-list li:nth-child(4) {
-  background-image: url("../images/marina_stills/left.MOV003.png");
-}
-.frame-list li:nth-child(5) {
-  background-image: url("../images/marina_stills/left.MOV004.png");
-}
-.frame-list li:nth-child(6) {
   background-image: url("../images/marina_stills/left.MOV005.png");
 }
-.frame-list li:nth-child(7) {
-  background-image: url("../images/marina_stills/left.MOV006.png");
-}
-.frame-list li:nth-child(8) {
-  background-image: url("../images/marina_stills/left.MOV007.png");
-}
-.frame-list li:nth-child(9) {
-  background-image: url("../images/marina_stills/left.MOV008.png");
-}
-.frame-list li:nth-child(10) {
-  background-image: url("../images/marina_stills/left.MOV009.png");
-}
-.frame-list li:nth-child(11) {
+.frame-list li:nth-child(5) {
   background-image: url("../images/marina_stills/left.MOV010.png");
 }
-.frame-list li:nth-child(12) {
-  background-image: url("../images/marina_stills/left.MOV011.png");
-}
-.frame-list li:nth-child(13) {
-  background-image: url("../images/marina_stills/left.MOV012.png");
-}
-.frame-list li:nth-child(14) {
-  background-image: url("../images/marina_stills/left.MOV013.png");
-}
-.frame-list li:nth-child(15) {
-  background-image: url("../images/marina_stills/left.MOV014.png");
-}
-.frame-list li:nth-child(16) {
+.frame-list li:nth-child(6) {
   background-image: url("../images/marina_stills/left.MOV015.png");
 }
-.frame-list li:nth-child(17) {
-  background-image: url("../images/marina_stills/left.MOV016.png");
-}
-.frame-list li:nth-child(18) {
-  background-image: url("../images/marina_stills/left.MOV017.png");
-}
-.frame-list li:nth-child(19) {
-  background-image: url("../images/marina_stills/left.MOV018.png");
-}
-.frame-list li:nth-child(20) {
-  background-image: url("../images/marina_stills/left.MOV019.png");
-}
-.frame-list li:nth-child(21) {
+.frame-list li:nth-child(7) {
   background-image: url("../images/marina_stills/left.MOV020.png");
 }
+.frame-list li:nth-child(8) {
+  background-image: url("../images/marina_stills/left.MOV025.png");
+}
+.frame-list li:nth-child(9) {
+  background-image: url("../images/marina_stills/left.MOV030.png");
+}
+.frame-list li:nth-child(10) {
+  background-image: url("../images/marina_stills/left.MOV035.png");
+}
+.frame-list li:nth-child(11) {
+  background-image: url("../images/marina_stills/left.MOV040.png");
+}
+.frame-list li:nth-child(12) {
+  background-image: url("../images/marina_stills/left.MOV045.png");
+}
+.frame-list li:nth-child(13) {
+  background-image: url("../images/marina_stills/left.MOV050.png");
+}
+.frame-list li:nth-child(14) {
+  background-image: url("../images/marina_stills/left.MOV055.png");
+}
+.frame-list li:nth-child(15) {
+  background-image: url("../images/marina_stills/left.MOV060.png");
+}
+.frame-list li:nth-child(16) {
+  background-image: url("../images/marina_stills/left.MOV065.png");
+}
+.frame-list li:nth-child(17) {
+  background-image: url("../images/marina_stills/left.MOV070.png");
+}
+.frame-list li:nth-child(18) {
+  background-image: url("../images/marina_stills/left.MOV075.png");
+}
+.frame-list li:nth-child(19) {
+  background-image: url("../images/marina_stills/left.MOV080.png");
+}
+.frame-list li:nth-child(20) {
+  background-image: url("../images/marina_stills/left.MOV085.png");
+}
+.frame-list li:nth-child(21) {
+  background-image: url("../images/marina_stills/left.MOV090.png");
+}
 .frame-list li:nth-child(22) {
-  background-image: url("../images/marina_stills/left.MOV021.png");
+  background-image: url("../images/marina_stills/left.MOV095.png");
 }
 .frame-list li:nth-child(23) {
-  background-image: url("../images/marina_stills/left.MOV022.png");
+  background-image: url("../images/marina_stills/left.MOV104.png");
 }
 
 
