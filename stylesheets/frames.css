@@ -2,10 +2,15 @@
 html, body {
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #fff;
 }
 
 /* line 7, ../sass/frames.scss */
+p {
+  padding: 10px;
+}
+
+/* line 11, ../sass/frames.scss */
 section {
   position: relative;
   height: 1000px;
@@ -13,13 +18,13 @@ section {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
-/* line 14, ../sass/frames.scss */
+/* line 18, ../sass/frames.scss */
 .menu-btn {
   background-color: grey;
   z-index: 1001;
 }
 
-/* line 20, ../sass/frames.scss */
+/* line 24, ../sass/frames.scss */
 #intro_title {
   width: 100%;
   z-index: 1001;
@@ -27,7 +32,7 @@ section {
   top: 200px;
 }
 
-/* line 27, ../sass/frames.scss */
+/* line 31, ../sass/frames.scss */
 #intro_title h1 {
   width: 1000px;
   margin: auto;
@@ -38,15 +43,15 @@ section {
   text-transform: uppercase;
 }
 
-/* line 37, ../sass/frames.scss */
-#movie {
+/* line 41, ../sass/frames.scss */
+#top_layer {
   z-index: 800;
   width: 6000px;
   top: 0px;
   height: 768px;
 }
 
-/* line 44, ../sass/frames.scss */
+/* line 48, ../sass/frames.scss */
 #test {
   height: 100%;
   top: -50px;
@@ -57,34 +62,99 @@ section {
   position: absolute;
 }
 
-/* line 54, ../sass/frames.scss */
+/* line 58, ../sass/frames.scss */
 #intro_text {
-  left: 1280px;
+  left: 1340px;
   top: 0px;
-  width: 500px;
+  width: 700px;
   height: 100%;
   display: block;
+  position: absolute;
+  background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 62, ../sass/frames.scss */
-#viewport {
+/* line 68, ../sass/frames.scss */
+#secondary_text {
+  left: 3000px;
+  top: 0px;
+  width: 1000px;
   height: 100%;
-  width: 700px;
+  display: block;
+  position: absolute;
+  background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 67, ../sass/frames.scss */
+/* line 78, ../sass/frames.scss */
+#last_text {
+  width: 300px;
+  left: 5700px;
+  display: block;
+  position: absolute;
+  height: 768px;
+  background: url(../images/black_pattern_tile.jpg) repeat;
+}
+
+/* line 87, ../sass/frames.scss */
+#sketch {
+  left: 3100px;
+  top: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 94, ../sass/frames.scss */
+#balcony {
+  left: 3400px;
+  top: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 101, ../sass/frames.scss */
+#belem_photo {
+  left: 3800px;
+  top: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 109, ../sass/frames.scss */
+#middle_layer {
+  z-index: 600;
+  height: 768px;
+  width: 5000px;
+}
+
+/* line 115, ../sass/frames.scss */
+#back_layer {
+  z-index: 500;
+  height: 768px;
+  width: 5200px;
+}
+
+/* line 121, ../sass/frames.scss */
+.belem_window {
+  left: 1500px;
+  top: 0px;
+  width: 600px;
+  height: 768px;
+  display: block;
+  position: absolute;
+}
+
+/* line 130, ../sass/frames.scss */
 ol {
   list-style: none;
 }
 
-/* line 71, ../sass/frames.scss */
+/* line 134, ../sass/frames.scss */
 .frame-list li {
   -webkit-background-size: auto 400px;
   -moz-background-size: auto 400px;
   background-size: auto 400px;
 }
 
-/* line 77, ../sass/frames.scss */
+/* line 140, ../sass/frames.scss */
 .frame-list li.active {
   background-position: 50%;
   background-repeat: no-repeat;
@@ -99,117 +169,117 @@ ol {
   width: 100%;
 }
 
-/* line 91, ../sass/frames.scss */
+/* line 154, ../sass/frames.scss */
 .frame-list li:nth-child(1) {
   background-image: url("../images/marina_stills/left.MOV000.png");
 }
 
-/* line 94, ../sass/frames.scss */
+/* line 157, ../sass/frames.scss */
 .frame-list li:nth-child(2) {
   background-image: url("../images/marina_stills/left.MOV001.png");
 }
 
-/* line 97, ../sass/frames.scss */
+/* line 160, ../sass/frames.scss */
 .frame-list li:nth-child(3) {
   background-image: url("../images/marina_stills/left.MOV002.png");
 }
 
-/* line 100, ../sass/frames.scss */
+/* line 163, ../sass/frames.scss */
 .frame-list li:nth-child(4) {
   background-image: url("../images/marina_stills/left.MOV005.png");
 }
 
-/* line 103, ../sass/frames.scss */
+/* line 166, ../sass/frames.scss */
 .frame-list li:nth-child(5) {
   background-image: url("../images/marina_stills/left.MOV010.png");
 }
 
-/* line 106, ../sass/frames.scss */
+/* line 169, ../sass/frames.scss */
 .frame-list li:nth-child(6) {
   background-image: url("../images/marina_stills/left.MOV015.png");
 }
 
-/* line 109, ../sass/frames.scss */
+/* line 172, ../sass/frames.scss */
 .frame-list li:nth-child(7) {
   background-image: url("../images/marina_stills/left.MOV020.png");
 }
 
-/* line 112, ../sass/frames.scss */
+/* line 175, ../sass/frames.scss */
 .frame-list li:nth-child(8) {
   background-image: url("../images/marina_stills/left.MOV025.png");
 }
 
-/* line 115, ../sass/frames.scss */
+/* line 178, ../sass/frames.scss */
 .frame-list li:nth-child(9) {
   background-image: url("../images/marina_stills/left.MOV030.png");
 }
 
-/* line 118, ../sass/frames.scss */
+/* line 181, ../sass/frames.scss */
 .frame-list li:nth-child(10) {
   background-image: url("../images/marina_stills/left.MOV035.png");
 }
 
-/* line 121, ../sass/frames.scss */
+/* line 184, ../sass/frames.scss */
 .frame-list li:nth-child(11) {
   background-image: url("../images/marina_stills/left.MOV040.png");
 }
 
-/* line 124, ../sass/frames.scss */
+/* line 187, ../sass/frames.scss */
 .frame-list li:nth-child(12) {
   background-image: url("../images/marina_stills/left.MOV045.png");
 }
 
-/* line 127, ../sass/frames.scss */
+/* line 190, ../sass/frames.scss */
 .frame-list li:nth-child(13) {
   background-image: url("../images/marina_stills/left.MOV050.png");
 }
 
-/* line 130, ../sass/frames.scss */
+/* line 193, ../sass/frames.scss */
 .frame-list li:nth-child(14) {
   background-image: url("../images/marina_stills/left.MOV055.png");
 }
 
-/* line 133, ../sass/frames.scss */
+/* line 196, ../sass/frames.scss */
 .frame-list li:nth-child(15) {
   background-image: url("../images/marina_stills/left.MOV060.png");
 }
 
-/* line 136, ../sass/frames.scss */
+/* line 199, ../sass/frames.scss */
 .frame-list li:nth-child(16) {
   background-image: url("../images/marina_stills/left.MOV065.png");
 }
 
-/* line 139, ../sass/frames.scss */
+/* line 202, ../sass/frames.scss */
 .frame-list li:nth-child(17) {
   background-image: url("../images/marina_stills/left.MOV070.png");
 }
 
-/* line 142, ../sass/frames.scss */
+/* line 205, ../sass/frames.scss */
 .frame-list li:nth-child(18) {
   background-image: url("../images/marina_stills/left.MOV075.png");
 }
 
-/* line 145, ../sass/frames.scss */
+/* line 208, ../sass/frames.scss */
 .frame-list li:nth-child(19) {
   background-image: url("../images/marina_stills/left.MOV080.png");
 }
 
-/* line 148, ../sass/frames.scss */
+/* line 211, ../sass/frames.scss */
 .frame-list li:nth-child(20) {
   background-image: url("../images/marina_stills/left.MOV085.png");
 }
 
-/* line 151, ../sass/frames.scss */
+/* line 214, ../sass/frames.scss */
 .frame-list li:nth-child(21) {
   background-image: url("../images/marina_stills/left.MOV090.png");
 }
 
-/* line 154, ../sass/frames.scss */
+/* line 217, ../sass/frames.scss */
 .frame-list li:nth-child(22) {
   background-image: url("../images/marina_stills/left.MOV095.png");
 }
 
-/* line 157, ../sass/frames.scss */
+/* line 220, ../sass/frames.scss */
 .frame-list li:nth-child(23) {
   background-image: url("../images/marina_stills/left.MOV104.png");
 }

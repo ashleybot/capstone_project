@@ -1,7 +1,11 @@
 html, body{
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #fff;
+}
+
+p {
+  padding: 10px;
 }
 
 section {
@@ -34,7 +38,7 @@ section {
   text-transform: uppercase;
 }
 
-#movie{
+#top_layer{
   z-index: 800;
   width: 6000px;
   top: 0px;
@@ -52,16 +56,75 @@ section {
 }
 
 #intro_text{
-  left: 1280px;
+  left: 1340px;
   top: 0px;
-  width: 500px;
+  width: 700px;
   height: 100%;
   display: block;
+  position: absolute;
+  background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-#viewport{
+#secondary_text{
+  left: 3000px;
+  top: 0px;
+  width: 1000px;
   height: 100%;
-  width: 700px;
+  display: block;
+  position: absolute;
+  background: url(../images/black_pattern_tile.jpg) repeat;
+}
+
+#last_text{
+  width: 300px;
+  left: 5700px;
+  display: block;
+  position: absolute;
+  height: 768px;
+  background: url(../images/black_pattern_tile.jpg) repeat;
+}
+
+#sketch {
+  left: 3100px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#balcony {
+  left: 3400px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#belem_photo {
+  left: 3800px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+
+#middle_layer{
+  z-index: 600;
+  height: 768px;
+  width: 5000px;
+}
+
+#back_layer {
+  z-index: 500;
+  height: 768px;
+  width: 5200px;
+}
+
+.belem_window {
+  left: 1500px;
+  top: 0px;
+  width: 600px;
+  height: 768px;
+  display: block;
+  position: absolute;
 }
 
 ol {
