@@ -59,6 +59,29 @@ section {
 
 }
 
+#instructions{
+  width: 1280px;
+  top: 550px;
+  position: absolute;
+  z-index: 1;
+}
+#instructions p{
+  width: 100px;
+  margin: auto;
+}
+#arrow{
+  font-family: gil sans, arial, sans;
+  font-size: 10em;
+  top: -20px;
+  position: absolute;
+  margin: 0;
+  padding:0;
+  display: block;
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg); /* IE 9 */
+  -webkit-transform:rotate(90deg); /* Safari and Chrome */
+}
+
 #top_layer{
   z-index: 800;
   width: 6000px;
