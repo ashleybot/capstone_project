@@ -19,31 +19,53 @@ section {
 }
 
 /* line 18, ../sass/frames.scss */
-.menu-btn {
-  background-color: grey;
-  z-index: 1001;
+#logo {
+  position: absolute;
+  top: -200px;
+  left: 800px;
+  transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  /* IE 9 */
+  -webkit-transform: rotate(25deg);
+  /* Safari and Chrome */
+  -webkit-filter: drop-shadow(2px 4px 3px rgba(0, 0, 0, 0.6));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#ccc')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#ccc')";
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 24, ../sass/frames.scss */
+/* line 34, ../sass/frames.scss */
+.menu-btn {
+  z-index: 1001;
+  font-size: 4em;
+  padding-left: 10px;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 43, ../sass/frames.scss */
 #intro_title {
   width: 100%;
   z-index: 1001;
   position: absolute;
-  top: 200px;
+  top: 300px;
 }
 
-/* line 31, ../sass/frames.scss */
+/* line 50, ../sass/frames.scss */
 #intro_title h1 {
-  width: 1000px;
+  width: 650px;
   margin: auto;
   z-index: 1001;
   color: #fff;
   font-size: 6em;
-  font-family: Georgia, serif;
-  text-transform: uppercase;
+  font-family: Baskerville, Calson, Georgia, serif;
+  text-shadow: horizontal-offset vertical-offset blur color;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 41, ../sass/frames.scss */
+/* line 62, ../sass/frames.scss */
 #top_layer {
   z-index: 800;
   width: 6000px;
@@ -51,7 +73,7 @@ section {
   height: 768px;
 }
 
-/* line 48, ../sass/frames.scss */
+/* line 69, ../sass/frames.scss */
 #test {
   height: 100%;
   top: -50px;
@@ -62,7 +84,7 @@ section {
   position: absolute;
 }
 
-/* line 58, ../sass/frames.scss */
+/* line 79, ../sass/frames.scss */
 #intro_text {
   left: 1340px;
   top: 0px;
@@ -73,7 +95,7 @@ section {
   background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 68, ../sass/frames.scss */
+/* line 89, ../sass/frames.scss */
 #secondary_text {
   left: 3000px;
   top: 0px;
@@ -84,7 +106,7 @@ section {
   background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 78, ../sass/frames.scss */
+/* line 99, ../sass/frames.scss */
 #last_text {
   width: 300px;
   left: 5700px;
@@ -94,7 +116,7 @@ section {
   background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 87, ../sass/frames.scss */
+/* line 108, ../sass/frames.scss */
 #sketch {
   left: 3100px;
   top: 0px;
@@ -102,7 +124,7 @@ section {
   position: absolute;
 }
 
-/* line 94, ../sass/frames.scss */
+/* line 115, ../sass/frames.scss */
 #balcony {
   left: 3400px;
   top: 0px;
@@ -110,7 +132,7 @@ section {
   position: absolute;
 }
 
-/* line 101, ../sass/frames.scss */
+/* line 122, ../sass/frames.scss */
 #belem_photo {
   left: 3800px;
   top: 0px;
@@ -118,21 +140,21 @@ section {
   position: absolute;
 }
 
-/* line 109, ../sass/frames.scss */
+/* line 130, ../sass/frames.scss */
 #middle_layer {
   z-index: 600;
   height: 768px;
   width: 5000px;
 }
 
-/* line 115, ../sass/frames.scss */
+/* line 136, ../sass/frames.scss */
 #back_layer {
   z-index: 500;
   height: 768px;
   width: 5200px;
 }
 
-/* line 121, ../sass/frames.scss */
+/* line 142, ../sass/frames.scss */
 .belem_window {
   left: 1500px;
   top: 0px;
@@ -142,19 +164,19 @@ section {
   position: absolute;
 }
 
-/* line 130, ../sass/frames.scss */
+/* line 151, ../sass/frames.scss */
 ol {
   list-style: none;
 }
 
-/* line 134, ../sass/frames.scss */
+/* line 155, ../sass/frames.scss */
 .frame-list li {
   -webkit-background-size: auto 400px;
   -moz-background-size: auto 400px;
   background-size: auto 400px;
 }
 
-/* line 140, ../sass/frames.scss */
+/* line 161, ../sass/frames.scss */
 .frame-list li.active {
   background-position: 50%;
   background-repeat: no-repeat;
@@ -169,117 +191,117 @@ ol {
   width: 100%;
 }
 
-/* line 154, ../sass/frames.scss */
+/* line 175, ../sass/frames.scss */
 .frame-list li:nth-child(1) {
   background-image: url("../images/marina_stills/left.MOV000.png");
 }
 
-/* line 157, ../sass/frames.scss */
+/* line 178, ../sass/frames.scss */
 .frame-list li:nth-child(2) {
   background-image: url("../images/marina_stills/left.MOV001.png");
 }
 
-/* line 160, ../sass/frames.scss */
+/* line 181, ../sass/frames.scss */
 .frame-list li:nth-child(3) {
   background-image: url("../images/marina_stills/left.MOV002.png");
 }
 
-/* line 163, ../sass/frames.scss */
+/* line 184, ../sass/frames.scss */
 .frame-list li:nth-child(4) {
   background-image: url("../images/marina_stills/left.MOV005.png");
 }
 
-/* line 166, ../sass/frames.scss */
+/* line 187, ../sass/frames.scss */
 .frame-list li:nth-child(5) {
   background-image: url("../images/marina_stills/left.MOV010.png");
 }
 
-/* line 169, ../sass/frames.scss */
+/* line 190, ../sass/frames.scss */
 .frame-list li:nth-child(6) {
   background-image: url("../images/marina_stills/left.MOV015.png");
 }
 
-/* line 172, ../sass/frames.scss */
+/* line 193, ../sass/frames.scss */
 .frame-list li:nth-child(7) {
   background-image: url("../images/marina_stills/left.MOV020.png");
 }
 
-/* line 175, ../sass/frames.scss */
+/* line 196, ../sass/frames.scss */
 .frame-list li:nth-child(8) {
   background-image: url("../images/marina_stills/left.MOV025.png");
 }
 
-/* line 178, ../sass/frames.scss */
+/* line 199, ../sass/frames.scss */
 .frame-list li:nth-child(9) {
   background-image: url("../images/marina_stills/left.MOV030.png");
 }
 
-/* line 181, ../sass/frames.scss */
+/* line 202, ../sass/frames.scss */
 .frame-list li:nth-child(10) {
   background-image: url("../images/marina_stills/left.MOV035.png");
 }
 
-/* line 184, ../sass/frames.scss */
+/* line 205, ../sass/frames.scss */
 .frame-list li:nth-child(11) {
   background-image: url("../images/marina_stills/left.MOV040.png");
 }
 
-/* line 187, ../sass/frames.scss */
+/* line 208, ../sass/frames.scss */
 .frame-list li:nth-child(12) {
   background-image: url("../images/marina_stills/left.MOV045.png");
 }
 
-/* line 190, ../sass/frames.scss */
+/* line 211, ../sass/frames.scss */
 .frame-list li:nth-child(13) {
   background-image: url("../images/marina_stills/left.MOV050.png");
 }
 
-/* line 193, ../sass/frames.scss */
+/* line 214, ../sass/frames.scss */
 .frame-list li:nth-child(14) {
   background-image: url("../images/marina_stills/left.MOV055.png");
 }
 
-/* line 196, ../sass/frames.scss */
+/* line 217, ../sass/frames.scss */
 .frame-list li:nth-child(15) {
   background-image: url("../images/marina_stills/left.MOV060.png");
 }
 
-/* line 199, ../sass/frames.scss */
+/* line 220, ../sass/frames.scss */
 .frame-list li:nth-child(16) {
   background-image: url("../images/marina_stills/left.MOV065.png");
 }
 
-/* line 202, ../sass/frames.scss */
+/* line 223, ../sass/frames.scss */
 .frame-list li:nth-child(17) {
   background-image: url("../images/marina_stills/left.MOV070.png");
 }
 
-/* line 205, ../sass/frames.scss */
+/* line 226, ../sass/frames.scss */
 .frame-list li:nth-child(18) {
   background-image: url("../images/marina_stills/left.MOV075.png");
 }
 
-/* line 208, ../sass/frames.scss */
+/* line 229, ../sass/frames.scss */
 .frame-list li:nth-child(19) {
   background-image: url("../images/marina_stills/left.MOV080.png");
 }
 
-/* line 211, ../sass/frames.scss */
+/* line 232, ../sass/frames.scss */
 .frame-list li:nth-child(20) {
   background-image: url("../images/marina_stills/left.MOV085.png");
 }
 
-/* line 214, ../sass/frames.scss */
+/* line 235, ../sass/frames.scss */
 .frame-list li:nth-child(21) {
   background-image: url("../images/marina_stills/left.MOV090.png");
 }
 
-/* line 217, ../sass/frames.scss */
+/* line 238, ../sass/frames.scss */
 .frame-list li:nth-child(22) {
   background-image: url("../images/marina_stills/left.MOV095.png");
 }
 
-/* line 220, ../sass/frames.scss */
+/* line 241, ../sass/frames.scss */
 .frame-list li:nth-child(23) {
   background-image: url("../images/marina_stills/left.MOV104.png");
 }
