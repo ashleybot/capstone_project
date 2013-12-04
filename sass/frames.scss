@@ -2,6 +2,7 @@ html, body{
   margin: 0;
   padding: 0;
   color: #fff;
+  background-color: #000;
 }
 
 p {
@@ -82,88 +83,49 @@ section {
   -webkit-transform:rotate(90deg); /* Safari and Chrome */
 }
 
+.blackdrop {
+  background: url(../images/black_pattern_tile.jpg) repeat;
+}
+
+// The heights of the layers control the scroll speed
+// So, the top layer is 15000px, then it will be 66% faster than a middle layer that is 10000px
 #top_layer{
   z-index: 800;
-  width: 6000px;
+  width: 10000px;
   top: 0px;
   height: 768px;
 }
-
-#test{
-  height: 100%;
-  top: -50px;
-  width: 1280px;
-  background: white;
-  padding: 10px 30px;
-  border: 1px #eee solid;
-  position: absolute;
-}
-
-#intro_text{
-  left: 1340px;
-  top: 0px;
-  width: 700px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  background: url(../images/black_pattern_tile.jpg) repeat;
-}
-
-#secondary_text{
-  left: 3000px;
-  top: 0px;
-  width: 1000px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  background: url(../images/black_pattern_tile.jpg) repeat;
-}
-
-#last_text{
-  width: 300px;
-  left: 5700px;
-  display: block;
-  position: absolute;
-  height: 768px;
-  background: url(../images/black_pattern_tile.jpg) repeat;
-}
-
-#sketch {
-  left: 3100px;
-  top:0px;
-  height: 100%;
-  position: absolute;
-}
-
-#balcony {
-  left: 3400px;
-  top:0px;
-  height: 100%;
-  position: absolute;
-}
-
-#belem_photo {
-  left: 3800px;
-  top:0px;
-  height: 100%;
-  position: absolute;
-}
-
 
 #middle_layer{
   z-index: 600;
   height: 768px;
-  width: 5000px;
+  width: 8000px;
 }
 
 #back_layer {
   z-index: 500;
   height: 768px;
-  width: 5200px;
+  width: 9000px;
 }
 
-.belem_window {
-  left: 1500px;
+#first_frame{
+  left: 0px;
+  width: 1280px;
+  height: 100%;
+  position: absolute;
+}
+
+#second_frame{
+  left: 1280px;
+  top: 0px;
+  width: 700px;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+#third_frame {
+  left: 1600px;
   top: 0px;
   width: 600px;
   height: 768px;
@@ -171,22 +133,84 @@ section {
   position: absolute;
 }
 
-ol {
-  list-style: none;
+#fourth_frame {
+  left: 2700px;
+  top:0px;
+  height: 100%;
+  position: absolute;
 }
 
-.frame-list li{
-  -webkit-background-size: auto 400px;
-  -moz-background-size: auto 400px;
-  background-size: auto 400px;
+#fifth_frame {
+  left: 4200px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#sixth_frame_background{
+  left: 3000px;
+  top: 0px;
+  width: 1000px;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+#sixth_frame {
+  left: 5800px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#seventh_frame {
+  left: 6000px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#eighth_frame {
+  left: 5700px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#ninth_frame {
+  left: 6700px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+}
+
+#tenth_frame {
+  left: 9400px;
+  top:0px;
+  height: 100%;
+  position: absolute;
+  
+}
+
+#conclusion{
+  width: 300px;
+  left: 9700px;
+  display: block;
+  position: absolute;
+  height: 768px;
+}
+
+
+
+
+
+ol {
+  list-style: none;
 }
 
 .frame-list li.active {
   background-position: 50%;
   background-repeat: no-repeat;
-  -webkit-background-size: auto auto;
-  -moz-background-size: auto auto;
-  background-size: auto auto;
   display: block;
   height: 100%;
   left: 0;
@@ -195,75 +219,6 @@ ol {
   width: 100%;
 }
 
-.frame-list li:nth-child(1) {
-  background-image: url("../images/marina_stills/left.MOV000.png");
-}
-.frame-list li:nth-child(2) {
-  background-image: url("../images/marina_stills/left.MOV001.png");
-}
-.frame-list li:nth-child(3) {
-  background-image: url("../images/marina_stills/left.MOV002.png");
-}
-.frame-list li:nth-child(4) {
-  background-image: url("../images/marina_stills/left.MOV005.png");
-}
-.frame-list li:nth-child(5) {
-  background-image: url("../images/marina_stills/left.MOV010.png");
-}
-.frame-list li:nth-child(6) {
-  background-image: url("../images/marina_stills/left.MOV015.png");
-}
-.frame-list li:nth-child(7) {
-  background-image: url("../images/marina_stills/left.MOV020.png");
-}
-.frame-list li:nth-child(8) {
-  background-image: url("../images/marina_stills/left.MOV025.png");
-}
-.frame-list li:nth-child(9) {
-  background-image: url("../images/marina_stills/left.MOV030.png");
-}
-.frame-list li:nth-child(10) {
-  background-image: url("../images/marina_stills/left.MOV035.png");
-}
-.frame-list li:nth-child(11) {
-  background-image: url("../images/marina_stills/left.MOV040.png");
-}
-.frame-list li:nth-child(12) {
-  background-image: url("../images/marina_stills/left.MOV045.png");
-}
-.frame-list li:nth-child(13) {
-  background-image: url("../images/marina_stills/left.MOV050.png");
-}
-.frame-list li:nth-child(14) {
-  background-image: url("../images/marina_stills/left.MOV055.png");
-}
-.frame-list li:nth-child(15) {
-  background-image: url("../images/marina_stills/left.MOV060.png");
-}
-.frame-list li:nth-child(16) {
-  background-image: url("../images/marina_stills/left.MOV065.png");
-}
-.frame-list li:nth-child(17) {
-  background-image: url("../images/marina_stills/left.MOV070.png");
-}
-.frame-list li:nth-child(18) {
-  background-image: url("../images/marina_stills/left.MOV075.png");
-}
-.frame-list li:nth-child(19) {
-  background-image: url("../images/marina_stills/left.MOV080.png");
-}
-.frame-list li:nth-child(20) {
-  background-image: url("../images/marina_stills/left.MOV085.png");
-}
-.frame-list li:nth-child(21) {
-  background-image: url("../images/marina_stills/left.MOV090.png");
-}
-.frame-list li:nth-child(22) {
-  background-image: url("../images/marina_stills/left.MOV095.png");
-}
-.frame-list li:nth-child(23) {
-  background-image: url("../images/marina_stills/left.MOV104.png");
-}
 
 
 
