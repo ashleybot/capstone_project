@@ -1,0 +1,35 @@
+.frame-list li{
+  background-size: contain;
+  background-color: #000000;
+}
+
+
+@for $i from 0 through 120 {
+  $c: $i + 1;
+  #people_walking_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking00#{$i}.png");
+      } @else if $i < 100 {
+        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking0#{$i}.png");
+      } @else {
+        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking#{$i}.png");
+      }
+      background-size: contain;
+    }
+}
+
+@for $i from 0 through 120 {
+  $c: $i + 1;
+  #river_boat_pan_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking00#{$i}.png");
+      } @else if $i < 100 {
+        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking0#{$i}.png");
+      } @else {
+        background: url("../images/discoveries_monument_still_frames/discoveries_monument_people_walking#{$i}.png");
+      }
+      background-size: contain;
+    }
+}

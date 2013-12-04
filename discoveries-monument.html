@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Tower of Belem | Eat & Travel</title>
+	  <link rel="stylesheet" href="stylesheets/reveal.css">	
+    <link rel="stylesheet" href="stylesheets/example.css" />
+    <link rel="stylesheet" href="stylesheets/pushy.css" />
+    <link rel="stylesheet" href="stylesheets/discoveries_monument.css" />
+    <link rel="stylesheet" href="stylesheets/discoveries_monument_animation.css" />
+</head>
+<body>
+  <!-- Pushy Menu -->
+  <nav class="pushy pushy-left">
+    <img src="images/eatntravel_white.png" alt="eatntravel" width="100" style="width:100px;margin:auto;" >
+    <p>
+      Eat & Travel is a restaurant in your town!
+    </p>
+    <a href="#" class="big-link" data-reveal-id="myModal">
+  		Menu
+  	</a>	
+  </nav>
+  
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>
+    
+  <div class="container">
+    
+    <!-- Menu Button -->
+    <div class="menu-btn" style="top:0px;">&#9776;</div>
+      
+    <div id="intro_title">
+      <img id="logo" src="images/eatntravel_white.png" alt="eatntravel_white" width="200">
+      <h1>Discoveries Monument</h1>
+    </div>
+    
+    
+    <div id="top_layer" class="scroll">
+      <div id="instructions">
+        <p><span id="arrow">&raquo;</span></p> 
+      </div>
+        
+      <div id="first_frame">
+        <ol id="people_walking_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>
+        
+      <div id="second_frame" class="blackdrop">
+        <p>UNESCO World Heritage Site built as a fortified lighthouse late in reign of Dom Manuel to guard entrance to port.</p>
+      </div>
+      
+      <div id="fourth_frame">
+        <img src="images/discoveries_monument/web_IMG_6465.jpg" alt="web_IMG_6465" height="768">
+      </div>
+        
+        
+      <div id="sixth_frame">
+        <ol id="river_boat_pan_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>  
+      
+      <div id="ninth_frame" class="blackdrop">
+        <p>Text frame about the Portugal 7 conquests</p>
+      </div>
+        
+      <div id="conclusion" class="blackdrop">
+        <p>This is the end.</p>
+      </div>
+    </div>
+    
+      
+    <div id="middle_layer" class="scroll">
+      <div id="third_frame">
+        <img src="images/discoveries_monument/web_IMG_6484.jpg" alt="web_IMG_6484" height="768">
+      </div>
+      
+      <div id="eighth_frame">
+        <img src="images/discoveries_monument/web_IMG_6443.jpg" alt="web_IMG_6443" height="768">
+      </div>
+      
+
+    </div>
+
+
+    <div id="back_layer" class="scroll">
+      
+      <div id="fifth_frame">
+        <img src="images/discoveries_monument/web_IMG_6477.jpg" alt="web_IMG_6477" height="768">
+      </div>      
+      
+      <div id="fifth_text_frame" class="blackdrop">
+        <p>
+          Some text about the front discoverer goes here.
+        </p>
+      </div>
+      
+      <div id="seventh_frame">
+        <img src="images/discoveries_monument/web_IMG_6446.jpg" alt="web_IMG_6446" height="768">
+      </div>
+      
+      <div id="tenth_frame">
+        <img src="images/discoveries_monument/web_IMG_6433.jpg" alt="web_IMG_6433" height="768">
+      </div>
+      
+    </div>
+  
+  </div>
+    
+  <div id="myModal" class="reveal-modal">
+		<h1>Reveal Modal Goodness</h1>
+		<p>This is a default modal in all its glory, but any of the styles here can easily be changed in the CSS.</p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    
+  <script type="text/javascript" src="javascripts/vendor/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/jquery.jInvertScroll.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/pushy.js"></script>
+	<script type="text/javascript" src="javascripts/vendor/jquery.reveal.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      
+      var frame_count = 120;
+      function create_frames(id)
+      {
+        var frameList = $(id);
+        console.log(frameList);
+        for(var i = 0; i < frame_count; i++) { // the first <li> is already on the page
+            var li = $('<li/>')
+                .appendTo(frameList);
+        }
+      }
+      
+      create_frames('#people_walking_frame_list');
+      create_frames('#river_boat_pan_frame_list');
+      
+      var $win = $(window),
+        $firstFrameAnimations = $('#people_walking_frame_list li'),
+        $sixthFrameAnimations = $('#river_boat_pan_frame_list li'),
+        isFirefox = navigator.userAgent.match(/Firefox/) !== null;
+      
+        var animationHandler = function() {
+  
+          // quick fix to disable turn animation in Firefox
+          if ( isFirefox == false) {
+              frameHandler();
+          }
+        };
+
+        $(document).scroll(animationHandler);
+        $win.resize(animationHandler);
+        
+      function frameHandler(percent) {
+        var w = percent * 1000;
+        var firstFrameAnimationStart = 0,
+          firstFrameAnimationEnd = 147,
+          sixthFrameAnimationStart = 450,
+          sixthFrameAnimationStop = 742;
+        
+        // hide the intro title
+        $('#intro_title').css('opacity', 100 - (percent * 200));
+        
+        // #people_walking_frame_list starts at 0
+        // #river_boat_frame_list starts at 
+        var speed = 1.8;
+        var v = w / speed;
+        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/frame_count)) * frame_count;
+        
+        if ((w > firstFrameAnimationStart) && (w < firstFrameAnimationEnd)) {
+        console.log(w);
+          if (choice >= 0 && choice < frame_count) {
+              var nextFrame = choice;
+              $firstFrameAnimations
+                  .removeClass('active')
+                  .eq(nextFrame).addClass('active');
+          }
+        } else if ((w > sixthFrameAnimationStart)&&(w < sixthFrameAnimationStop)) {
+          if (choice >= 0 && choice < frame_count) {
+              var nextFrame = choice;
+              $sixthFrameAnimations
+                  .removeClass('active')
+                  .eq(nextFrame).addClass('active');
+          }
+          
+        }
+      }
+      
+      function scrollHandler(percentScroll){
+        var w = percentScroll * 1000; // times 1000 so that we can get it to a fine grained scroll, less is choppy
+        var v = w / 14.01;
+        var countOfFrames = 6;
+        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/countOfFrames)) * countOfFrames;
+        console.log(choice);
+        if (choice == 0){
+          make_base();
+        } else {
+        }
+        
+      }
+      $.jInvertScroll(['.scroll','.menu-btn'],        // an array containing the selector(s) for the elements you want to animate
+          {
+          height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+          onScroll: frameHandler
+      });
+      $('.menu-btn').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
+    }(jQuery));
+  </script>
+</body>
+</html>
+

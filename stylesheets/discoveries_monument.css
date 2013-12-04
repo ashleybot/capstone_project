@@ -1,4 +1,4 @@
-/* line 1, ../sass/frames copy.scss */
+/* line 1, ../sass/discoveries_monument.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -6,12 +6,12 @@ html, body {
   background-color: #000;
 }
 
-/* line 8, ../sass/frames copy.scss */
+/* line 8, ../sass/discoveries_monument.scss */
 p {
   padding: 10px;
 }
 
-/* line 12, ../sass/frames copy.scss */
+/* line 12, ../sass/discoveries_monument.scss */
 section {
   position: relative;
   height: 1000px;
@@ -19,7 +19,7 @@ section {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
-/* line 19, ../sass/frames copy.scss */
+/* line 19, ../sass/discoveries_monument.scss */
 #logo {
   position: absolute;
   top: -200px;
@@ -37,7 +37,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 35, ../sass/frames copy.scss */
+/* line 35, ../sass/discoveries_monument.scss */
 .menu-btn {
   z-index: 1001;
   font-size: 4em;
@@ -46,7 +46,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 44, ../sass/frames copy.scss */
+/* line 44, ../sass/discoveries_monument.scss */
 #intro_title {
   width: 100%;
   z-index: 1001;
@@ -54,9 +54,9 @@ section {
   top: 300px;
 }
 
-/* line 51, ../sass/frames copy.scss */
+/* line 51, ../sass/discoveries_monument.scss */
 #intro_title h1 {
-  width: 650px;
+  width: 900px;
   margin: auto;
   z-index: 1001;
   color: #fff;
@@ -66,7 +66,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 63, ../sass/frames copy.scss */
+/* line 63, ../sass/discoveries_monument.scss */
 #instructions {
   width: 1280px;
   top: 550px;
@@ -74,13 +74,13 @@ section {
   z-index: 1;
 }
 
-/* line 69, ../sass/frames copy.scss */
+/* line 69, ../sass/discoveries_monument.scss */
 #instructions p {
   width: 100px;
   margin: auto;
 }
 
-/* line 73, ../sass/frames copy.scss */
+/* line 73, ../sass/discoveries_monument.scss */
 #arrow {
   font-family: gil sans, arial, sans;
   font-size: 10em;
@@ -96,12 +96,12 @@ section {
   /* Safari and Chrome */
 }
 
-/* line 86, ../sass/frames copy.scss */
+/* line 86, ../sass/discoveries_monument.scss */
 .blackdrop {
   background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 92, ../sass/frames copy.scss */
+/* line 92, ../sass/discoveries_monument.scss */
 #top_layer {
   z-index: 800;
   width: 10000px;
@@ -109,21 +109,21 @@ section {
   height: 768px;
 }
 
-/* line 99, ../sass/frames copy.scss */
+/* line 99, ../sass/discoveries_monument.scss */
 #middle_layer {
   z-index: 600;
   height: 768px;
   width: 8000px;
 }
 
-/* line 105, ../sass/frames copy.scss */
+/* line 105, ../sass/discoveries_monument.scss */
 #back_layer {
   z-index: 500;
   height: 768px;
   width: 9000px;
 }
 
-/* line 111, ../sass/frames copy.scss */
+/* line 111, ../sass/discoveries_monument.scss */
 #first_frame {
   left: 0px;
   width: 1280px;
@@ -131,7 +131,7 @@ section {
   position: absolute;
 }
 
-/* line 118, ../sass/frames copy.scss */
+/* line 118, ../sass/discoveries_monument.scss */
 #second_frame {
   left: 1280px;
   top: 0px;
@@ -141,9 +141,9 @@ section {
   position: absolute;
 }
 
-/* line 127, ../sass/frames copy.scss */
+/* line 127, ../sass/discoveries_monument.scss */
 #third_frame {
-  left: 1600px;
+  left: 1500px;
   top: 0px;
   width: 600px;
   height: 768px;
@@ -151,73 +151,75 @@ section {
   position: absolute;
 }
 
-/* line 136, ../sass/frames copy.scss */
+/* line 136, ../sass/discoveries_monument.scss */
 #fourth_frame {
-  left: 2700px;
-  top: 0px;
-  height: 100%;
-  position: absolute;
-}
-
-/* line 143, ../sass/frames copy.scss */
-#fifth_frame {
-  left: 4200px;
-  top: 0px;
-  height: 100%;
-  position: absolute;
-}
-
-/* line 150, ../sass/frames copy.scss */
-#sixth_frame_background {
   left: 3000px;
   top: 0px;
-  width: 1000px;
   height: 100%;
-  display: block;
   position: absolute;
 }
 
-/* line 159, ../sass/frames copy.scss */
+/* line 143, ../sass/discoveries_monument.scss */
+#fifth_frame {
+  left: 3700px;
+  top: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 150, ../sass/discoveries_monument.scss */
+#fifth_text_frame {
+  width: 300px;
+  left: 4300px;
+  display: block;
+  position: absolute;
+  height: 768px;
+  color: white;
+}
+
+/* line 159, ../sass/discoveries_monument.scss */
 #sixth_frame {
+  left: 5200px;
+  top: 0px;
+  width: 1280px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 167, ../sass/discoveries_monument.scss */
+#seventh_frame {
+  left: 5500px;
+  top: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 174, ../sass/discoveries_monument.scss */
+#eighth_frame {
   left: 5800px;
   top: 0px;
   height: 100%;
   position: absolute;
 }
 
-/* line 166, ../sass/frames copy.scss */
-#seventh_frame {
-  left: 6000px;
-  top: 0px;
-  height: 100%;
-  position: absolute;
-}
-
-/* line 173, ../sass/frames copy.scss */
-#eighth_frame {
-  left: 5700px;
-  top: 0px;
-  height: 100%;
-  position: absolute;
-}
-
-/* line 180, ../sass/frames copy.scss */
+/* line 181, ../sass/discoveries_monument.scss */
 #ninth_frame {
-  left: 6700px;
+  left: 7150px;
+  width: 500px;
   top: 0px;
   height: 100%;
   position: absolute;
 }
 
-/* line 187, ../sass/frames copy.scss */
+/* line 189, ../sass/discoveries_monument.scss */
 #tenth_frame {
-  left: 9400px;
+  left: 8000px;
   top: 0px;
   height: 100%;
   position: absolute;
 }
 
-/* line 195, ../sass/frames copy.scss */
+/* line 197, ../sass/discoveries_monument.scss */
 #conclusion {
   width: 300px;
   left: 9700px;
@@ -226,14 +228,13 @@ section {
   height: 768px;
 }
 
-/* line 207, ../sass/frames copy.scss */
+/* line 209, ../sass/discoveries_monument.scss */
 ol {
   list-style: none;
 }
 
-/* line 211, ../sass/frames copy.scss */
+/* line 213, ../sass/discoveries_monument.scss */
 .frame-list li.active {
-  background-position: 50%;
   background-repeat: no-repeat;
   display: block;
   height: 100%;
