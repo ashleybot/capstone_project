@@ -1,4 +1,6 @@
-/* line 1, ../sass/frames.scss */
+@import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+/* line 4, ../sass/frames.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -6,12 +8,14 @@ html, body {
   background-color: #000;
 }
 
-/* line 8, ../sass/frames.scss */
+/* line 11, ../sass/frames.scss */
 p {
-  padding: 10px;
+  padding: 80px;
+  font-family: 'Jacques Francois', serif;
+  font-size: 2em;
 }
 
-/* line 12, ../sass/frames.scss */
+/* line 17, ../sass/frames.scss */
 section {
   position: relative;
   height: 1000px;
@@ -19,7 +23,7 @@ section {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
-/* line 19, ../sass/frames.scss */
+/* line 24, ../sass/frames.scss */
 #logo {
   position: absolute;
   top: -200px;
@@ -37,7 +41,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 35, ../sass/frames.scss */
+/* line 40, ../sass/frames.scss */
 .menu-btn {
   z-index: 1001;
   font-size: 4em;
@@ -46,7 +50,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 44, ../sass/frames.scss */
+/* line 49, ../sass/frames.scss */
 #intro_title {
   width: 100%;
   z-index: 1001;
@@ -54,33 +58,34 @@ section {
   top: 300px;
 }
 
-/* line 51, ../sass/frames.scss */
+/* line 56, ../sass/frames.scss */
 #intro_title h1 {
-  width: 650px;
+  width: 700px;
   margin: auto;
   z-index: 1001;
   color: #fff;
   font-size: 6em;
-  font-family: Baskerville, Calson, Georgia, serif;
+  font-family: 'Josefin Slab', Baskerville, Calson, Georgia, serif;
   text-shadow: horizontal-offset vertical-offset blur color;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 63, ../sass/frames.scss */
+/* line 68, ../sass/frames.scss */
 #instructions {
   width: 1280px;
-  top: 550px;
+  top: 1150px;
   position: absolute;
   z-index: 1;
 }
 
-/* line 69, ../sass/frames.scss */
-#instructions p {
-  width: 100px;
+/* line 74, ../sass/frames.scss */
+#instructions span {
+  width: 100%;
   margin: auto;
+  display: block;
 }
 
-/* line 73, ../sass/frames.scss */
+/* line 79, ../sass/frames.scss */
 #arrow {
   font-family: gil sans, arial, sans;
   font-size: 10em;
@@ -96,12 +101,12 @@ section {
   /* Safari and Chrome */
 }
 
-/* line 86, ../sass/frames.scss */
+/* line 92, ../sass/frames.scss */
 .blackdrop {
   background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 92, ../sass/frames.scss */
+/* line 98, ../sass/frames.scss */
 #top_layer {
   z-index: 800;
   width: 10000px;
@@ -109,21 +114,21 @@ section {
   height: 768px;
 }
 
-/* line 99, ../sass/frames.scss */
+/* line 105, ../sass/frames.scss */
 #middle_layer {
   z-index: 600;
   height: 768px;
   width: 8000px;
 }
 
-/* line 105, ../sass/frames.scss */
+/* line 111, ../sass/frames.scss */
 #back_layer {
   z-index: 500;
   height: 768px;
   width: 9000px;
 }
 
-/* line 111, ../sass/frames.scss */
+/* line 117, ../sass/frames.scss */
 #first_frame {
   left: 0px;
   width: 1280px;
@@ -131,7 +136,7 @@ section {
   position: absolute;
 }
 
-/* line 118, ../sass/frames.scss */
+/* line 124, ../sass/frames.scss */
 #second_frame {
   left: 1280px;
   top: 0px;
@@ -141,7 +146,7 @@ section {
   position: absolute;
 }
 
-/* line 127, ../sass/frames.scss */
+/* line 133, ../sass/frames.scss */
 #third_frame {
   left: 1600px;
   top: 0px;
@@ -151,7 +156,7 @@ section {
   position: absolute;
 }
 
-/* line 136, ../sass/frames.scss */
+/* line 142, ../sass/frames.scss */
 #fourth_frame {
   left: 2700px;
   top: 0px;
@@ -159,7 +164,7 @@ section {
   position: absolute;
 }
 
-/* line 143, ../sass/frames.scss */
+/* line 149, ../sass/frames.scss */
 #fifth_frame {
   left: 4200px;
   top: 0px;
@@ -167,7 +172,7 @@ section {
   position: absolute;
 }
 
-/* line 150, ../sass/frames.scss */
+/* line 156, ../sass/frames.scss */
 #sixth_frame_background {
   left: 3000px;
   top: 0px;
@@ -177,7 +182,7 @@ section {
   position: absolute;
 }
 
-/* line 159, ../sass/frames.scss */
+/* line 165, ../sass/frames.scss */
 #sixth_frame {
   left: 5800px;
   top: 0px;
@@ -185,7 +190,7 @@ section {
   position: absolute;
 }
 
-/* line 166, ../sass/frames.scss */
+/* line 172, ../sass/frames.scss */
 #seventh_frame {
   left: 6000px;
   top: 0px;
@@ -193,7 +198,7 @@ section {
   position: absolute;
 }
 
-/* line 173, ../sass/frames.scss */
+/* line 179, ../sass/frames.scss */
 #eighth_frame {
   left: 5700px;
   top: 0px;
@@ -201,7 +206,7 @@ section {
   position: absolute;
 }
 
-/* line 180, ../sass/frames.scss */
+/* line 186, ../sass/frames.scss */
 #ninth_frame {
   left: 6700px;
   top: 0px;
@@ -209,7 +214,7 @@ section {
   position: absolute;
 }
 
-/* line 187, ../sass/frames.scss */
+/* line 193, ../sass/frames.scss */
 #tenth_frame {
   left: 9400px;
   top: 0px;
@@ -217,7 +222,7 @@ section {
   position: absolute;
 }
 
-/* line 195, ../sass/frames.scss */
+/* line 201, ../sass/frames.scss */
 #conclusion {
   width: 300px;
   left: 9700px;
@@ -226,12 +231,12 @@ section {
   height: 768px;
 }
 
-/* line 207, ../sass/frames.scss */
+/* line 213, ../sass/frames.scss */
 ol {
   list-style: none;
 }
 
-/* line 211, ../sass/frames.scss */
+/* line 217, ../sass/frames.scss */
 .frame-list li.active {
   background-position: 50%;
   background-repeat: no-repeat;

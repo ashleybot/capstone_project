@@ -1,0 +1,52 @@
+.frame-list li{
+  background-size: contain;
+  background-color: #000000;
+}
+
+
+@for $i from 0 through 102 {
+  $c: $i + 1;
+  #bridge_still_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("../images/still_bridge_frames/still_bridge_from_water00#{$i}.png");
+      } @else if $i < 100 {
+        background: url("../images/still_bridge_frames/still_bridge_from_water0#{$i}.png");
+      } @else {
+        background: url("../images/still_bridge_frames/still_bridge_from_water#{$i}.png");
+      }
+      background-size: contain;
+    }
+}
+
+@for $i from 0 through 105 {
+  $c: $i + 1;
+  #bridge_marina_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("../images/bridge_marina_frames/bridge_marina00#{$i}.png");
+      } @else if $i < 100 {
+        background: url("../images/bridge_marina_frames/bridge_marina0#{$i}.png");
+      } @else {
+        background: url("../images/bridge_marina_frames/bridge_marina#{$i}.png");
+      }
+      background-size: contain;
+    }
+}
+
+@for $i from 0 through 170 {
+  $c: $i + 1;
+  #bridge_sailboat_frame_list
+    li:nth-of-type(#{$i}) {
+      @if $i < 10 {
+        background: url("../images/bridge_sailboat_frames/bridge_sailboat00#{$i}.png");
+      } @else if $i < 100 {
+        background: url("../images/bridge_sailboat_frames/bridge_sailboat0#{$i}.png");
+      } @else {
+        background: url("../images/bridge_sailboat_frames/bridge_sailboat#{$i}.png");
+      }
+      background-size: contain;
+    }
+}
+
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>April 25th Bridge | Eat & Travel</title>
+	  <link rel="stylesheet" href="stylesheets/reveal.css">	
+    <link rel="stylesheet" href="stylesheets/example.css" />
+    <link rel="stylesheet" href="stylesheets/pushy.css" />
+    <link rel="stylesheet" href="stylesheets/april_25th_bridge.css" />
+    <link rel="stylesheet" href="stylesheets/april_25th_bridge_animation.css" />
+</head>
+<body>
+  <!-- Pushy Menu -->
+  <nav class="pushy pushy-left">
+    <img src="images/eatntravel_white.png" alt="eatntravel" width="100" style="width:100px;margin:auto;" >
+    <p>
+      Eat & Travel is a restaurant in your town!
+    </p>
+    <a href="#" class="big-link" data-reveal-id="myModal">
+  		Menu
+  	</a>	
+  </nav>
+  
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>
+    
+  <div class="container">
+    
+    <!-- Menu Button -->
+    <div class="menu-btn" style="top:0px;">&#9776;</div>
+      
+    <div id="intro_title">
+      <img id="logo" src="images/eatntravel_white.png" alt="eatntravel_white" width="200">
+      <h1>April 25th Bridge</h1>
+    </div>
+      
+    <div id="top_layer" class="scroll">
+      <div id="instructions">
+        <span id="arrow">&raquo;</span>
+      </div>
+        
+      <div id="first_frame">
+        <ol id="bridge_still_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>
+        
+      <div id="second_frame" class="blackdrop">
+        <p>
+          This bridge was completed in 1966 and was originally named after the dictator Salazar. The name of the bridge was changed after the revolution of April 25, 1974. The bridge is often compared to the Golden Gate Bridge in San Francisco. 
+          Upon completion, the bridge had the longest central span in Europe, and the deepest foundations in the world.
+        </p>
+      </div>
+        
+      
+      <div id="fourth_frame">
+        <ol id="bridge_marina_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>
+        
+      <div id="sixth_frame">
+        <ol id="bridge_sailboat_frame_list" class="frame-list">
+          <li class="active"></li>
+        </ol>
+      </div>       
+      
+      <div id="sixth_frame_text" class="blackdrop">
+        <p>
+          The large statue of Christ overlooking the Tagus was inspired by the similar statue in Rio de Janeiro. 
+          The monument was built in 1959 as a thanks to God for Portugal having been spared during World War II. 
+        </p>
+      </div> 
+        
+        
+      <div id="conclusion" class="blackdrop">
+        <p>This is the end.</p>
+      </div>
+    </div>
+      
+    <div id="middle_layer" class="scroll">
+      <div id="third_frame">
+        <img src="images/april_25th_bridge/web_IMG_5915.JPG" alt="IMG_5915" height="768">
+      </div>
+
+      <div id="seventh_frame">
+        <img src="images/april_25th_bridge/web_IMG_6438.JPG" alt="IMG_6438" height="768">
+      </div>
+
+    </div>
+      
+    <div id="back_layer" class="scroll">
+      
+      <div id="fifth_frame">
+        <img src="images/april_25th_bridge/web_IMG_5892.JPG" alt="IMG_5892" height="768">
+      </div>
+      
+    </div>
+  
+  </div>
+    
+  <div id="myModal" class="reveal-modal">
+		<h1>Reveal Modal Goodness</h1>
+		<p>This is a default modal in all its glory, but any of the styles here can easily be changed in the CSS.</p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+    
+  <script type="text/javascript" src="javascripts/vendor/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/jquery.jInvertScroll.js"></script>
+  <script type="text/javascript" src="javascripts/vendor/pushy.js"></script>
+	<script type="text/javascript" src="javascripts/vendor/jquery.reveal.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      
+      var frame_count = 169;
+      function create_frames(id, count)
+      {
+        var frameList = $(id);
+        for(var i = 0; i < frame_count; i++) { // the first <li> is already on the page
+            var li = $('<li/>')
+                .appendTo(frameList);
+        }
+      }
+      
+      create_frames('#bridge_still_frame_list', 102);
+      create_frames('#bridge_marina_frame_list', 105);
+      create_frames('#bridge_sailboat_frame_list', 170);
+      
+      var $win = $(window),
+        $currentFrames = $('.frame-list li'),
+        isFirefox = navigator.userAgent.match(/Firefox/) !== null;
+        
+      var animationHandler = function() {
+
+        // quick fix to disable turn animation in Firefox
+        if ( isFirefox == false) {
+            //frameHandler();
+        }
+      };
+
+      //$(document).scroll(animationHandler); // don't need this because the jInvertScroll has it's own scroll event
+      $win.resize(animationHandler);
+      
+      function activateNextFrame(currentFrameList, totalFrames, newFrameIndex){
+          if (newFrameIndex >= 0 && newFrameIndex < totalFrames) {
+            console.log(newFrameIndex);
+              var nextFrame = newFrameIndex;
+              currentFrameList
+                  .removeClass('active')
+                  .eq(nextFrame).addClass('active');
+          }
+      }
+        
+      function frameHandler(percent) {
+        var w = percent * 1000;
+        var startAnimation = 0;
+        $('#intro_title').css('opacity', 100 - (percent * 200));
+        
+        if (w < 188){
+          currentFrames = $('#bridge_still_frame_list li');
+          frame_count = 102;
+        } else if ((w > 238) && (w < 543)){
+          currentFrames = $('#bridge_marina_frame_list li');
+          frame_count = 105;
+        } else if (w > 600) {
+          currentFrames = $('#bridge_sailboat_frame_list li');
+          frame_count = 170;
+        }
+        
+        var speed = 1.8;
+        var v = w / speed;
+        var choice = Math.ceil(v) - (Math.floor(Math.ceil(v)/frame_count)) * frame_count;
+        
+        if (w < 188){
+          activateNextFrame(currentFrames, frame_count, choice);
+        } else if ((w > 238) && (w < 543)){
+          activateNextFrame(currentFrames, frame_count, choice);
+        } else if ((w > 600) && (w < 800)) {
+          activateNextFrame(currentFrames, frame_count, choice);
+        }
+      }
+      
+      $.jInvertScroll(['.scroll','.menu-btn'],        // an array containing the selector(s) for the elements you want to animate
+          {
+          height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+          onScroll: frameHandler
+      });
+      $('.menu-btn').css('position','fixed'); // this needs to be applied after scrolling is applied, otherwise the btn races to the right
+    }(jQuery));
+  </script>
+</body>
+</html>
+

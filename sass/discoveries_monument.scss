@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+SC);
+
 html, body{
   margin: 0;
   padding: 0;
@@ -6,8 +9,11 @@ html, body{
 }
 
 p {
-  padding: 10px;
+  padding: 80px;
+  font-family: 'Jacques Francois', serif;
+  font-size: 2em;
 }
+
 
 section {
   position: relative;
@@ -49,12 +55,12 @@ section {
 }
 
 #intro_title h1{
-  width: 900px;
+  width: 1100px;
   margin: auto;
   z-index: 1001;
   color: #fff;
   font-size: 6em;
-  font-family: Baskerville, Calson, Georgia, serif;
+  font-family: 'Alegreya SC', Baskerville, Calson, Georgia, serif;
   text-shadow: horizontal-offset vertical-offset blur color;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 
@@ -141,15 +147,15 @@ section {
 }
 
 #fifth_frame {
-  left: 3700px;
+  left: 3650px;
   top:0px;
   height: 100%;
   position: absolute;
 }
 
 #fifth_text_frame {
-  width: 300px;
-  left: 4300px;
+  width: 500px;
+  left: 4200px;
   display: block;
   position: absolute;
   height: 768px;

@@ -1,4 +1,6 @@
-/* line 1, ../sass/discoveries_monument.scss */
+@import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+SC);
+/* line 4, ../sass/discoveries_monument.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -6,12 +8,14 @@ html, body {
   background-color: #000;
 }
 
-/* line 8, ../sass/discoveries_monument.scss */
+/* line 11, ../sass/discoveries_monument.scss */
 p {
-  padding: 10px;
+  padding: 80px;
+  font-family: 'Jacques Francois', serif;
+  font-size: 2em;
 }
 
-/* line 12, ../sass/discoveries_monument.scss */
+/* line 18, ../sass/discoveries_monument.scss */
 section {
   position: relative;
   height: 1000px;
@@ -19,7 +23,7 @@ section {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
-/* line 19, ../sass/discoveries_monument.scss */
+/* line 25, ../sass/discoveries_monument.scss */
 #logo {
   position: absolute;
   top: -200px;
@@ -37,7 +41,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 35, ../sass/discoveries_monument.scss */
+/* line 41, ../sass/discoveries_monument.scss */
 .menu-btn {
   z-index: 1001;
   font-size: 4em;
@@ -46,7 +50,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 44, ../sass/discoveries_monument.scss */
+/* line 50, ../sass/discoveries_monument.scss */
 #intro_title {
   width: 100%;
   z-index: 1001;
@@ -54,19 +58,19 @@ section {
   top: 300px;
 }
 
-/* line 51, ../sass/discoveries_monument.scss */
+/* line 57, ../sass/discoveries_monument.scss */
 #intro_title h1 {
-  width: 900px;
+  width: 1100px;
   margin: auto;
   z-index: 1001;
   color: #fff;
   font-size: 6em;
-  font-family: Baskerville, Calson, Georgia, serif;
+  font-family: 'Alegreya SC', Baskerville, Calson, Georgia, serif;
   text-shadow: horizontal-offset vertical-offset blur color;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 63, ../sass/discoveries_monument.scss */
+/* line 69, ../sass/discoveries_monument.scss */
 #instructions {
   width: 1280px;
   top: 550px;
@@ -74,13 +78,13 @@ section {
   z-index: 1;
 }
 
-/* line 69, ../sass/discoveries_monument.scss */
+/* line 75, ../sass/discoveries_monument.scss */
 #instructions p {
   width: 100px;
   margin: auto;
 }
 
-/* line 73, ../sass/discoveries_monument.scss */
+/* line 79, ../sass/discoveries_monument.scss */
 #arrow {
   font-family: gil sans, arial, sans;
   font-size: 10em;
@@ -96,12 +100,12 @@ section {
   /* Safari and Chrome */
 }
 
-/* line 86, ../sass/discoveries_monument.scss */
+/* line 92, ../sass/discoveries_monument.scss */
 .blackdrop {
   background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 92, ../sass/discoveries_monument.scss */
+/* line 98, ../sass/discoveries_monument.scss */
 #top_layer {
   z-index: 800;
   width: 10000px;
@@ -109,21 +113,21 @@ section {
   height: 768px;
 }
 
-/* line 99, ../sass/discoveries_monument.scss */
+/* line 105, ../sass/discoveries_monument.scss */
 #middle_layer {
   z-index: 600;
   height: 768px;
   width: 8000px;
 }
 
-/* line 105, ../sass/discoveries_monument.scss */
+/* line 111, ../sass/discoveries_monument.scss */
 #back_layer {
   z-index: 500;
   height: 768px;
   width: 9000px;
 }
 
-/* line 111, ../sass/discoveries_monument.scss */
+/* line 117, ../sass/discoveries_monument.scss */
 #first_frame {
   left: 0px;
   width: 1280px;
@@ -131,7 +135,7 @@ section {
   position: absolute;
 }
 
-/* line 118, ../sass/discoveries_monument.scss */
+/* line 124, ../sass/discoveries_monument.scss */
 #second_frame {
   left: 1280px;
   top: 0px;
@@ -141,7 +145,7 @@ section {
   position: absolute;
 }
 
-/* line 127, ../sass/discoveries_monument.scss */
+/* line 133, ../sass/discoveries_monument.scss */
 #third_frame {
   left: 1500px;
   top: 0px;
@@ -151,7 +155,7 @@ section {
   position: absolute;
 }
 
-/* line 136, ../sass/discoveries_monument.scss */
+/* line 142, ../sass/discoveries_monument.scss */
 #fourth_frame {
   left: 3000px;
   top: 0px;
@@ -159,25 +163,25 @@ section {
   position: absolute;
 }
 
-/* line 143, ../sass/discoveries_monument.scss */
+/* line 149, ../sass/discoveries_monument.scss */
 #fifth_frame {
-  left: 3700px;
+  left: 3650px;
   top: 0px;
   height: 100%;
   position: absolute;
 }
 
-/* line 150, ../sass/discoveries_monument.scss */
+/* line 156, ../sass/discoveries_monument.scss */
 #fifth_text_frame {
-  width: 300px;
-  left: 4300px;
+  width: 500px;
+  left: 4200px;
   display: block;
   position: absolute;
   height: 768px;
   color: white;
 }
 
-/* line 159, ../sass/discoveries_monument.scss */
+/* line 165, ../sass/discoveries_monument.scss */
 #sixth_frame {
   left: 5200px;
   top: 0px;
@@ -186,7 +190,7 @@ section {
   position: absolute;
 }
 
-/* line 167, ../sass/discoveries_monument.scss */
+/* line 173, ../sass/discoveries_monument.scss */
 #seventh_frame {
   left: 5500px;
   top: 0px;
@@ -194,7 +198,7 @@ section {
   position: absolute;
 }
 
-/* line 174, ../sass/discoveries_monument.scss */
+/* line 180, ../sass/discoveries_monument.scss */
 #eighth_frame {
   left: 5800px;
   top: 0px;
@@ -202,7 +206,7 @@ section {
   position: absolute;
 }
 
-/* line 181, ../sass/discoveries_monument.scss */
+/* line 187, ../sass/discoveries_monument.scss */
 #ninth_frame {
   left: 7150px;
   width: 500px;
@@ -211,7 +215,7 @@ section {
   position: absolute;
 }
 
-/* line 189, ../sass/discoveries_monument.scss */
+/* line 195, ../sass/discoveries_monument.scss */
 #tenth_frame {
   left: 8000px;
   top: 0px;
@@ -219,7 +223,7 @@ section {
   position: absolute;
 }
 
-/* line 197, ../sass/discoveries_monument.scss */
+/* line 203, ../sass/discoveries_monument.scss */
 #conclusion {
   width: 300px;
   left: 9700px;
@@ -228,12 +232,12 @@ section {
   height: 768px;
 }
 
-/* line 209, ../sass/discoveries_monument.scss */
+/* line 215, ../sass/discoveries_monument.scss */
 ol {
   list-style: none;
 }
 
-/* line 213, ../sass/discoveries_monument.scss */
+/* line 219, ../sass/discoveries_monument.scss */
 .frame-list li.active {
   background-repeat: no-repeat;
   display: block;

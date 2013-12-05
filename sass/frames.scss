@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+
 html, body{
   margin: 0;
   padding: 0;
@@ -6,7 +9,9 @@ html, body{
 }
 
 p {
-  padding: 10px;
+  padding: 80px;
+  font-family: 'Jacques Francois', serif;
+  font-size: 2em;
 }
 
 section {
@@ -49,12 +54,12 @@ section {
 }
 
 #intro_title h1{
-  width: 650px;
+  width: 700px;
   margin: auto;
   z-index: 1001;
   color: #fff;
   font-size: 6em;
-  font-family: Baskerville, Calson, Georgia, serif;
+  font-family: 'Josefin Slab', Baskerville, Calson, Georgia, serif;
   text-shadow: horizontal-offset vertical-offset blur color;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 
@@ -62,13 +67,14 @@ section {
 
 #instructions{
   width: 1280px;
-  top: 550px;
+  top: 1150px;
   position: absolute;
   z-index: 1;
 }
-#instructions p{
-  width: 100px;
+#instructions span{
+  width: 100%;
   margin: auto;
+  display: block;
 }
 #arrow{
   font-family: gil sans, arial, sans;
