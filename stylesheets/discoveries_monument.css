@@ -52,7 +52,7 @@ section {
 
 /* line 50, ../sass/discoveries_monument.scss */
 #intro_title {
-  width: 100%;
+  width: 1280px;
   z-index: 1001;
   position: absolute;
   top: 300px;

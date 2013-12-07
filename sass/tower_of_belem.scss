@@ -47,22 +47,24 @@ section {
 }
 
 #intro_title{
-  width: 100%;
+  width: 1280px; //screen width
   z-index: 1001;
   position: absolute;
-  top: 300px;
+  top: 250px;
 }
 
 #intro_title h1{
-  width: 700px;
+  top: -100px;
+  left: 350px;
+  display: block;
+  position: absolute;
+  width: 600px;
   margin: auto;
-  z-index: 1001;
   color: #fff;
   font-size: 6em;
   font-family: 'Josefin Slab', Baskerville, Calson, Georgia, serif;
   text-shadow: horizontal-offset vertical-offset blur color;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-
 }
 
 #instructions{

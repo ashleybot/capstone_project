@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Jacques+Francois);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
-/* line 4, ../sass/april_25th_bridge.scss */
+/* line 4, ../sass/tower_of_belem.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -8,14 +8,14 @@ html, body {
   background-color: #000;
 }
 
-/* line 11, ../sass/april_25th_bridge.scss */
+/* line 11, ../sass/tower_of_belem.scss */
 p {
   padding: 80px;
   font-family: 'Jacques Francois', serif;
   font-size: 2em;
 }
 
-/* line 17, ../sass/april_25th_bridge.scss */
+/* line 17, ../sass/tower_of_belem.scss */
 section {
   position: relative;
   height: 1000px;
@@ -23,7 +23,7 @@ section {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
-/* line 24, ../sass/april_25th_bridge.scss */
+/* line 24, ../sass/tower_of_belem.scss */
 #logo {
   position: absolute;
   top: -200px;
@@ -41,7 +41,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 40, ../sass/april_25th_bridge.scss */
+/* line 40, ../sass/tower_of_belem.scss */
 .menu-btn {
   z-index: 1001;
   font-size: 4em;
@@ -50,19 +50,22 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 49, ../sass/april_25th_bridge.scss */
+/* line 49, ../sass/tower_of_belem.scss */
 #intro_title {
   width: 1280px;
   z-index: 1001;
   position: absolute;
-  top: 360px;
+  top: 250px;
 }
 
-/* line 56, ../sass/april_25th_bridge.scss */
+/* line 56, ../sass/tower_of_belem.scss */
 #intro_title h1 {
-  width: 750px;
+  top: -100px;
+  left: 350px;
+  display: block;
+  position: absolute;
+  width: 600px;
   margin: auto;
-  z-index: 1001;
   color: #fff;
   font-size: 6em;
   font-family: 'Josefin Slab', Baskerville, Calson, Georgia, serif;
@@ -70,7 +73,7 @@ section {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 68, ../sass/april_25th_bridge.scss */
+/* line 70, ../sass/tower_of_belem.scss */
 #instructions {
   width: 1280px;
   top: 1150px;
@@ -78,14 +81,14 @@ section {
   z-index: 1;
 }
 
-/* line 74, ../sass/april_25th_bridge.scss */
+/* line 76, ../sass/tower_of_belem.scss */
 #instructions span {
   width: 100%;
   margin: auto;
   display: block;
 }
 
-/* line 79, ../sass/april_25th_bridge.scss */
+/* line 81, ../sass/tower_of_belem.scss */
 #arrow {
   font-family: gil sans, arial, sans;
   font-size: 10em;
@@ -101,34 +104,34 @@ section {
   /* Safari and Chrome */
 }
 
-/* line 92, ../sass/april_25th_bridge.scss */
+/* line 94, ../sass/tower_of_belem.scss */
 .blackdrop {
   background: url(../images/black_pattern_tile.jpg) repeat;
 }
 
-/* line 98, ../sass/april_25th_bridge.scss */
+/* line 100, ../sass/tower_of_belem.scss */
 #top_layer {
   z-index: 800;
-  width: 8100px;
+  width: 10000px;
   top: 0px;
   height: 768px;
 }
 
-/* line 105, ../sass/april_25th_bridge.scss */
+/* line 107, ../sass/tower_of_belem.scss */
 #middle_layer {
   z-index: 600;
   height: 768px;
-  width: 6000px;
+  width: 8000px;
 }
 
-/* line 111, ../sass/april_25th_bridge.scss */
+/* line 113, ../sass/tower_of_belem.scss */
 #back_layer {
   z-index: 500;
   height: 768px;
-  width: 7000px;
+  width: 9000px;
 }
 
-/* line 117, ../sass/april_25th_bridge.scss */
+/* line 119, ../sass/tower_of_belem.scss */
 #first_frame {
   left: 0px;
   width: 1280px;
@@ -136,7 +139,7 @@ section {
   position: absolute;
 }
 
-/* line 124, ../sass/april_25th_bridge.scss */
+/* line 126, ../sass/tower_of_belem.scss */
 #second_frame {
   left: 1280px;
   top: 0px;
@@ -146,9 +149,9 @@ section {
   position: absolute;
 }
 
-/* line 133, ../sass/april_25th_bridge.scss */
+/* line 135, ../sass/tower_of_belem.scss */
 #third_frame {
-  left: 1400px;
+  left: 1600px;
   top: 0px;
   width: 600px;
   height: 768px;
@@ -156,64 +159,87 @@ section {
   position: absolute;
 }
 
-/* line 142, ../sass/april_25th_bridge.scss */
+/* line 144, ../sass/tower_of_belem.scss */
 #fourth_frame {
-  left: 2900px;
-  width: 1280px;
+  left: 2700px;
   top: 0px;
   height: 100%;
   position: absolute;
 }
 
-/* line 150, ../sass/april_25th_bridge.scss */
+/* line 151, ../sass/tower_of_belem.scss */
 #fifth_frame {
-  left: 3400px;
+  left: 4200px;
   top: 0px;
   height: 100%;
   position: absolute;
 }
 
-/* line 157, ../sass/april_25th_bridge.scss */
+/* line 158, ../sass/tower_of_belem.scss */
+#sixth_frame_background {
+  left: 3000px;
+  top: 0px;
+  width: 1000px;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+/* line 167, ../sass/tower_of_belem.scss */
 #sixth_frame {
-  left: 5000px;
-  width: 1280px;
+  left: 5800px;
   top: 0px;
   height: 100%;
   position: absolute;
 }
 
-/* line 165, ../sass/april_25th_bridge.scss */
-#sixth_frame_text {
-  left: 6120px;
-  width: 600px;
-  top: 0px;
-  height: 100%;
-  position: absolute;
-}
-
-/* line 173, ../sass/april_25th_bridge.scss */
+/* line 174, ../sass/tower_of_belem.scss */
 #seventh_frame {
-  left: 4650px;
+  left: 6000px;
   top: 0px;
   height: 100%;
   position: absolute;
 }
 
-/* line 180, ../sass/april_25th_bridge.scss */
+/* line 181, ../sass/tower_of_belem.scss */
+#eighth_frame {
+  left: 5700px;
+  top: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 188, ../sass/tower_of_belem.scss */
+#ninth_frame {
+  left: 6700px;
+  top: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 195, ../sass/tower_of_belem.scss */
+#tenth_frame {
+  left: 9400px;
+  top: 0px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 203, ../sass/tower_of_belem.scss */
 #conclusion {
   width: 300px;
-  left: 7800px;
+  left: 9700px;
   display: block;
   position: absolute;
   height: 768px;
 }
 
-/* line 192, ../sass/april_25th_bridge.scss */
+/* line 215, ../sass/tower_of_belem.scss */
 ol {
   list-style: none;
 }
 
-/* line 196, ../sass/april_25th_bridge.scss */
+/* line 219, ../sass/tower_of_belem.scss */
 .frame-list li.active {
   background-position: 50%;
   background-repeat: no-repeat;
